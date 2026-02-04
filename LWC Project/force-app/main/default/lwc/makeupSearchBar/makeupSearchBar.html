@@ -1,0 +1,13 @@
+<template>
+    <c-price-range-filter onpricefilterchange={handlePrice}></c-price-range-filter>
+ 
+    <template if:true={products.length}>
+        <template for:each={products} for:item="p">
+            <div key={p.Id}>{p.Name} — ₹{p.Price__c}</div>
+        </template>
+    </template>
+ 
+    <template if:false={products.length}>
+        <div>No products found</div>
+    </template>
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Category Filter">
+        <div class="slds-p-around_medium">
+            <lightning-combobox
+                label="Choose Category"
+                value={selectedCategory}
+                options={categoryOptions}
+                onchange={handleCategoryChange}>
+            </lightning-combobox>
+        </div>
+    </lightning-card>
+</template>

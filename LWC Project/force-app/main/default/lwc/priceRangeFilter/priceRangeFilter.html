@@ -1,0 +1,9 @@
+
+<template>
+    <lightning-card title="Price Range Filter">
+        <lightning-input type="number" label="Min Price" onchange={handleMin}></lightning-input>
+        <lightning-input type="number" label="Max Price" onchange={handleMax}></lightning-input>
+        <lightning-button label="Apply" variant="brand" onclick={applyFilter}></lightning-button>
+    </lightning-card>
+</template>
+ 

@@ -1,0 +1,17 @@
+
+<template>
+    <div class="card">
+        <img src={product.Image_Link__c} />
+
+        <h2>{product.Brand__c}</h2>
+        <p>{product.Name}</p>
+        <p>Category: {product.Category__c}</p>
+        <p>Price: ${product.Price__c}</p>
+
+        <lightning-button 
+            label="Add to Cart" 
+            onclick={addToCart}
+            variant="brand">
+        </lightning-button>
+    </div>
+</template>

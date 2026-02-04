@@ -1,0 +1,28 @@
+
+<template>
+    <lightning-card title="Product Details">
+
+        <div class="slds-m-around_medium">
+            <p><strong>Name:</strong> {product.Name}</p>
+            <p><strong>Brand:</strong> {product.Brand__c}</p>
+            <p><strong>Category:</strong> {product.Category__c}</p>
+            <p><strong>Price:</strong> {product.Price__c}</p>
+        </div>
+
+        <div class="slds-m-around_medium">
+            <lightning-button 
+                label="Add to Cart"
+                variant="brand"
+                onclick={addToCart}>
+            </lightning-button>
+
+            <lightning-button 
+                label="Back"
+                variant="neutral"
+                class="slds-m-left_small"
+                onclick={goBack}>
+            </lightning-button>
+        </div>
+
+    </lightning-card>
+</template>

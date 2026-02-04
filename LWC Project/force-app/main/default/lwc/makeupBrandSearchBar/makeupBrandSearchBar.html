@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Brand Filter">
+
+        <lightning-combobox 
+            label="Select Brand"
+            value={selectedBrand}
+            placeholder="Select Brand"
+            options={brandOptions}
+            onchange={handleBrandChange}>
+        </lightning-combobox>
+
+    </lightning-card>
+</template>

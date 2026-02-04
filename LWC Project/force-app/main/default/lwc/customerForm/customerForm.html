@@ -1,0 +1,52 @@
+
+<template>
+    <lightning-card title="Customer Information">
+        <div class="slds-p-around_medium">
+
+            <lightning-input 
+                label="Full Name"
+                value={fullName}
+                onchange={handleName}>
+            </lightning-input>
+
+            <lightning-input 
+                label="Phone"
+                type="tel"
+                value={phone}
+                onchange={handlePhone}>
+            </lightning-input>
+
+            <lightning-input 
+                label="Street Address"
+                value={street}
+                onchange={handleStreet}>
+            </lightning-input>
+
+            <lightning-input 
+                label="City"
+                value={city}
+                onchange={handleCity}>
+            </lightning-input>
+
+            <lightning-input 
+                label="Postal Code"
+                value={postalCode}
+                onchange={handlePostalCode}>
+            </lightning-input>
+
+            <lightning-input 
+                label="Country"
+                value={country}
+                onchange={handleCountry}>
+            </lightning-input>
+
+            <lightning-button 
+                class="slds-m-top_medium"
+                label="Submit"
+                variant="brand"
+                onclick={saveCustomer}>
+            </lightning-button>
+
+        </div>
+    </lightning-card>
+</template>
